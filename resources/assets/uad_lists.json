@@ -9739,12 +9739,30 @@
   },
   {
     "id": "com.android.hotspot2.osulogin",
-    "list": "Pending",
-    "description": "",
+    "list": "Oem",
+    "description": "OsuLogin\nRegister online to hotspot? Reinstalls after reboot.",
     "dependencies": [],
     "neededBy": [],
     "labels": [],
     "removal": "Expert"
+  },
+   {
+    "id": "com.google.android.cellbroadcastreceiver.overlay.miui",
+    "list": "Oem",
+    "description": "MiuiCellBroadcastReceiverOverlay APK\nCell Broadcast Service is related but can't use it.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.google.android.cellbroadcastservice.overlay.miui",
+    "list": "Oem",
+    "description": "MiuiCellBroadcastLegacyApp APK\nCell Broadcast Service is related but can't use it.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
   },
   {
     "id": "com.android.theme.icon.pebble",
@@ -9754,6 +9772,69 @@
     "neededBy": [],
     "labels": [],
     "removal": "Advanced"
+  },
+  {
+    "id": "org.mipay.android.manager",
+    "list": "Oem",
+    "description": "MipayService\nXiaomi Payment related services, not used!",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.qualcomm.qti.ridemodeaudio",
+    "list": "Misc",
+    "description": "Ridemode Recording list\nHidden app, not available for users that should be the audio playback of the drive mode.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "android.autoinstalls.config.xiaomi.qssi",
+    "list": "Oem",
+    "description": "PlayAutoInstalls\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.miui.extraphoto",
+    "list": "Oem",
+    "description": "Bokeh\nThe document mode of the Xiaomi camera (for taking IDs), deleting it doesn't affect the editing of albums.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Advanced"
+  },
+  {
+    "id": "com.miuix.editor",
+    "list": "Oem",
+    "description": "Text action\nIts problably used for FrequentPhrase(com.miui.phrase) but also Frequent Phrases is unknown app so its safe to remove.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.miui.miwallpaper.overlay",
+    "list": "Oem",
+    "description": "Reinstalls after reboot. But looks like safe to remove.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Expert"
+  },
+  {
+    "id": "com.miui.miwallpaper.overlay.customize",
+    "list": "Oem",
+    "description": "Reinstalls after reboot. But looks like safe to remove.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Expert"
   },
   {
     "id": "com.android.theme.icon.taperedrect",
@@ -9823,6 +9904,33 @@
     "list": "Aosp",
     "description": "Wireless emergency alerts\nCell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.\nhttps://en.wikipedia.org/wiki/Cell_Broadcast\nhttps://www.androidcentral.com/amber-alerts-and-android-what-you-need-know\nhttps://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver",
     "dependencies": ["com.google.android.cellbroadcastservice"],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Expert"
+  },
+  {
+    "id": "com.miui.wallpaper.overlay",
+    "list": "Oem",
+    "description": "Reinstalls after reboot. But looks like safe to remove.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Expert"
+  },
+  {
+    "id": "com.xiaomi.miaudiovisual",
+    "list": "Oem",
+    "description": "MiAudioVisual\nSafe to remove if you not use audio visuals when screen is off.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.miui.wallpaper.overlay.customize",
+    "list": "Oem",
+    "description": "Reinstalls after reboot. But looks like safe to remove.",
+    "dependencies": [],
     "neededBy": [],
     "labels": [],
     "removal": "Expert"
@@ -15959,7 +16067,24 @@
   {
     "id": "com.mi.health",
     "list": "Oem",
-    "description": "Mi Health\nPedometer, menstrual and sleep tracker\nYour data are synchronized in the cloud. \nDo you really want Xiaomi to know you didn't sleep much yesterday (your ovulation day btw...)\n",
+    "description": "Heart Rate\nHidden app, not available for users.\nhttps://www.reddit.com/r/Xiaomi/comments/v0uhhx/found_hidden_heart_rate_app_in_miui_1304_i_opened/",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.mi.healthglobal",
+    "list": "Oem","description": "Mi Health\nPedometer, menstrual and sleep tracker\nYour data are synchronized in the cloud. \nDo you really want Xiaomi to know you didn't sleep much yesterday (your ovulation day btw...)\n",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.xiaomi.mircs",
+    "list": "Oem",
+    "description": "Mi RCS\nHidden unused Xiaomi free web messaging.",
     "dependencies": [],
     "neededBy": [],
     "labels": [],
@@ -15974,10 +16099,29 @@
     "labels": [],
     "removal": "Recommended"
   },
+  
   {
     "id": "com.mi.setupwizardoverlay",
     "list": "Oem",
     "description": "Weird package related to the SetupWizard (the menu which assists you to setup your phone for the first time)\nA user said he needed to remove this package to be able to properly apply a dark theme to the Settings app.\n",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.android.cameraextensions",
+    "list": "Oem",
+    "description": "CameraExtensionsProxy.\nCamera-related third-party apps can call Android camera extensions such as Portrait, Night Mode, and HDR, which doesn't seem to work significantly on MIUI.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.android.thememanager.gliobal_config.config.overlay",
+    "list": "Oem",
+    "description": "Gliobal_Config APK\nIt is problably used for MIUI theme manager but not sure, I removed it without issues.",
     "dependencies": [],
     "neededBy": [],
     "labels": [],
@@ -15991,6 +16135,87 @@
     "neededBy": [],
     "labels": [],
     "removal": "Recommended"
+  },
+  {
+    "id": "ccom.fido.asm",
+    "list": "Oem",
+    "description": "FIDO UAF1.0 ASM\nRelated to app fingerprint unlocking and payments. Safe to remove if you don't use password-less authentification to access online services.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Advanced"
+  },
+  {
+    "id": "com.mi.emapal",
+    "list": "Oem",
+    "description": "GamePal\nIn China language game mode tracing menu not available for users. Safe to remove.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.xiaomi.mtb",
+    "list": "Oem",
+    "description": "Rueban(MTB)V2.4\nHidden debugging baseband tools, not available for users.\nhttps://i.postimg.cc/GpSxmNyj/Bez-n-zvu.png",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "miui.systemui.plugin",
+    "list": "Oem",
+    "description": "System UI Plug-in. When removed, Android will use the AOSP style volume bar.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Advanced"
+  },
+  {
+    "id": "com.xiaomi.cameratools",
+    "list": "Oem",
+    "description": "CameraTools\nCamera calibration. Deleting it does not affect the camera.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.mobile.iroaming",
+    "list": "Oem",
+    "description": "com.modemdebug\nHidden running in the background debugs for data traffic and all that, not useful for the average person.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.miui.mediafeature",
+    "list": "Oem",
+    "description": "MediaFeature合集\nIs this something for media? Unused app, problably for China.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.miui.face.overlay.miui",
+    "list": "Oem",
+    "description": "MiuiBiometricResOverlay\nFace Unlock feature will be unavailable.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Advanced"
+  },
+  {
+    "id": "com.miui.aod",
+    "list": "Oem",
+    "description": "Always-on display\nSafe to remove if you don't use \"Always-on display\" features in settings.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Advanced"
   },
   {
     "id": "com.qiyi.video",
@@ -16427,11 +16652,29 @@
   {
     "id": "com.miui.audiomonitor",
     "list": "Oem",
-    "description": "My guess is this is a feature allowing to control the sound of multiples apps.\nIt's just a guess based on existing Xiaomi devices features. Can someone check this? \n",
+    "description": "Recording Assistant. Voice Call Recorder (only in MIUI dialer app). Unused on Global, EEA MIUI",
     "dependencies": [],
     "neededBy": [],
     "labels": [],
     "removal": "Advanced"
+  },
+  {
+    "id": "com.xiaomi.bluetooth",
+    "list": "Oem",
+    "description": "MIUI Bluetooth Control\nYou must keep this if you want Bluethooth to work properly.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Expert"
+  },
+  {
+    "id": "com.goodix.gftest",
+    "list": "Oem",
+    "description": "Fingerprint test\nHidden app that tests your fingerprint. Not available for users.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
   },
   {
     "id": "com.miui.calculator",
@@ -16459,6 +16702,15 @@
     "neededBy": [],
     "labels": [],
     "removal": "Advanced"
+  },
+  {
+    "id": "com.google.android.apps.mediahome.launcher",
+    "list": "Google",
+    "description": "Entertainment Space\nAll-in-one application for entertainment purposes like movies, games, books etc.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
   },
   {
     "id": "com.miui.home",
@@ -16625,11 +16877,92 @@
   {
     "id": "com.android.updater",
     "list": "Oem",
-    "description": "Mi Updater\nProvides system updates\nREMOVING THIS WILL BOOTLOOP YOUR DEVICE!\n",
+    "description": "Mi Updater\nProvides system updates\nREMOVING THIS WILL BOOTLOOP YOUR DEVICE! Doesn't bootloop on MIUI 14.",
     "dependencies": [],
     "neededBy": [],
     "labels": [],
     "removal": "Unsafe"
+  },
+  {
+    "id": "com.wdstechnology.android.kryten",
+    "list": "Oem",
+    "description": "OTA Access Point Configuration. Might break OTA updates but on some xiaomi devices it doesnt exist, so what exacly does it do?",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Expert"
+  },
+  {
+    "id": "com.longcheertel.AutoTest",
+    "list": "Oem",
+    "description": "Autotest\nHidden hardware tests.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.longcheertel.cit",
+    "list": "Oem",
+    "description": "Cit test\nHidden hardware tests.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.longcheertel.midtest",
+    "list": "Oem",
+    "description": "Assemble test\nHidden hardware tests.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.fingerprints.extension.service",
+    "list": "Oem",
+    "description": "FingerprintExtensionService\nNeeded for fingerprint sensor test.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "android.autoinstalls.config.Xiaomi.willow",
+    "list": "Oem",
+    "description": "PlayAutoInstalls\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.miui.screenshot",
+    "list": "Oem",
+    "description": "MIUI Screenshot\nScreenshots will not work.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Expert"
+  },
+  {
+    "id": "com.longcheertel.modemlog",
+    "list": "Oem",
+    "description": "Modem log\nHidden app that includes TcardLog, modem log, Tcpdump.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
+  },
+  {
+    "id": "com.longcheertel.sarauth",
+    "list": "Oem",
+    "description": "Autotest\nHidden hardware tests.",
+    "dependencies": [],
+    "neededBy": [],
+    "labels": [],
+    "removal": "Recommended"
   },
   {
     "id": "com.lbe.security.miui",
